@@ -9,6 +9,10 @@ app.get('/foo', function(req, res) {
   res.send('bar!');
 });
 
+app.post("/api", (req, res) => {
+  res.send("NOPE");
+});
+
 app.listen(3000, () => {
   console.log('Example app listening on port 3000!');
 });
